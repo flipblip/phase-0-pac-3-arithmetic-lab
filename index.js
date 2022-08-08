@@ -1,4 +1,4 @@
-function add(a=716, b){
+function add(a, b){
     const result = a += b
     return result;
 }
@@ -31,9 +31,12 @@ function decrement(n){
     return n;
 }
 
-function makeInt(n = ""){
-    const result = parseInt(n.value, 10);
-    return result;
+function makeInt(n){
+    return parseInt(n, 10);
+}
+
+function preserveDecimal(n){
+    return parseFloat(n);
 }
 
 
